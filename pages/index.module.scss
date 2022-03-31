@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: black;
+}
+
+
+.counter{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,102,1) 35%, rgba(0,212,255,1) 100%);
+    padding: 30px 30px;
+    margin: 0 15px 15px 15px;
+    .count {
+        background-color: white;
+        color: black;
+        font-size: 30px;
+        width: 100px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .resetButton{
+        font-size: 25px;
+    }
+}
+.button {
+    font-size: 30px;
+    padding: 5px 10px;
+    min-width: 100px;
+    background-color: aquamarine;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer; /*good rule of thumb for clickable elements */
+    &:last-child { /*if bottom happens to be last child*/
+        margin-bottom: 0;
+    }
+}
+
+.counterContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px
+}
